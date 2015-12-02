@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+   <title>Robot Arm Interface</title>
+</head>
+
+<body>
+<!-- 
+{% if action %}
+  <h1>Current: {{ action }}</h1>
+{% endif %} -->
+   <h1>Status</h1>
+      <h2>{{ response }}</h2>
+
+   <h1>Press to execute command</h1>
+
+  
+       <form action="/base-anti-clockwise" method="POST">
+            <input type="submit" value="Rotate Base Counter-clockwise">
+        </form>
+
+        <form action="/base-clockwise" method="POST">
+            <input type="submit" value="Rotate Base Clockwise">
+        </form>
+
+         <form action="/grip-open" method="POST">
+            <input type="submit" value="Open the Grip">
+        </form>
+
+         <form action="/grip-close" method="POST">
+            <input type="submit" value="Close the Grip">
+        </form>
+
+</body>
+
+</html>
